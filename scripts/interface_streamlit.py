@@ -1,7 +1,12 @@
 """
-Interface Streamlit para Gomoku AlphaZero
+"""Interface Streamlit para Gomoku AlphaZero
 GUI moderna e interativa para jogar contra o bot
 """
+
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'src'))
 
 import streamlit as st
 import numpy as np

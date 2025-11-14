@@ -1,13 +1,17 @@
 """
-Script de Treino AlphaZero - Self-Play + Training Loop
+"""Script de Treino AlphaZero - Self-Play + Training Loop
 Executa ciclos de self-play e treino da rede neural
 """
+
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'src'))
 
 import numpy as np
 import torch
 import torch.optim as optim
 import time
-import os
 from datetime import datetime
 
 from network import create_network, save_checkpoint, load_checkpoint
